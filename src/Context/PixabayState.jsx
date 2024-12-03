@@ -12,6 +12,7 @@ const PixabayState = (props) => {
             const data = await api.json();
             setImageData(data.hits)
             console.log(data.hits);
+            console.log("Hello")
         };     
         fetchData();
     },[query])
